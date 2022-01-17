@@ -1,0 +1,178 @@
+body{
+    width: 100%;
+    margin: 0px;
+    font-family: 'Arimo', sans-serif;;
+}
+
+.first_view{
+    background-image: url(images/tea\ background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.nav{
+    margin: auto;
+    padding: 20px 0px 0px 5px;
+    width: 90%;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    position: sticky;
+}
+
+.nav p{
+    font-family: 'Aclonica', sans-serif;
+    font-size: 40px;
+    width: fit-content;
+    margin-top: 0px;
+}
+
+.nav a{
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    font-weight: 800;
+    padding: 16px 20px;
+    letter-spacing: .15em;
+}
+
+.nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+.head{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.head h1{
+    color: white;
+    font-size: 92px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.head h1 #chai{
+    font-family: 'Aclonica', sans-serif;
+}
+
+.head .join-us-form{
+    color: white;
+}
+
+.head .join-us-form p{
+    font-size: 25px;
+    padding: 0px 50px;
+}
+
+
+.head .join-us-form #form-chai{
+    font-family: 'Aclonica', sans-serif;
+}
+
+.head form{
+    margin: 0px 20px;
+    padding: 0px 10px 10px 10px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+
+}
+
+.head form p{
+    color: black;
+    font-size: 12px;
+    text-align: center;
+}
+
+.stylish-input{
+    width: 80%;
+    align-self: center;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+
+.stylish-input input{
+    width: 100%;
+    height: 100%;
+    color: gray;
+    padding-top: 15px;
+    border: none;
+    outline: none;
+}
+
+.stylish-input label{
+    position: absolute;
+    color: black;
+    font-size: 15px;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.stylish-input label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid rgb(150, 97, 62);
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+}
+
+.content{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.4s ease;
+}
+
+.stylish-input input:focus + .label-name .content, 
+.stylish-input input:valid + .label-name .content{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: black;
+}
+
+.stylish-input input:focus + .label-name::after,
+.stylish-input input:valid + .label-name::after{
+    transform: translateX(0%);
+}
+
+.head form #submit-button{
+    width: fit-content;
+    align-self: center;
+    text-align: left;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.head form #submit-button:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+#info{
+    font-size: 14px;
+    font-weight: 800;
+}
