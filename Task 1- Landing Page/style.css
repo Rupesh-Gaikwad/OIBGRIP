@@ -1,7 +1,8 @@
 body{
     width: 100%;
     margin: 0px;
-    font-family: 'Arimo', sans-serif;;
+    font-family: 'Arimo', sans-serif;
+    display: initial;
 }
 
 .first_view{
@@ -54,6 +55,7 @@ body{
 .head{
     width: 90%;
     margin: auto;
+    margin-top: 30px;
     display: flex;
     justify-content: space-around;
 }
@@ -181,4 +183,53 @@ body{
 #info{
     font-size: 14px;
     font-weight: 800;
+}
+
+.we-are-famous-for{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.we-are-famous-for h1{
+    text-align: center;
+    font-size: 72px;
+    font-weight: 800;
+}
+
+.we-are-famous-for .card-box{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 5%;
+}
+
+.card-box .card{
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px 10px;
+}
+
+.card img{
+    width: 90%;
+}
+
+.we-are-famous-for a{
+    margin-top: 10px;
+    width: fit-content;
+    align-self: flex-end;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid black;
+    font-weight: 600;
+}
+
+.we-are-famous-for a:hover{
+    color: black;
+    border: 1px solid black;
+    background-color: white;
 }
