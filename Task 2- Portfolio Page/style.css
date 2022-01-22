@@ -38,12 +38,14 @@ nav{
 #hi-in-nav{
     background-color: white;
     margin: 0% 0% 10% 0%;
+    font-size: 18px;
+    background-color: #378761;
     border-top: none;
     font-weight: 800;
     letter-spacing: .1em;
-    font-size: 40px;
-    color: #ab054d;
+    color: #378761;
     border-radius: .3em;
+    border: 25px solid white;
 }
 
 nav ul{
@@ -59,16 +61,16 @@ nav ul li{
     font-weight: 600;
     display: flex;
     flex-direction: column;
-    border-top: 1px solid gray;
+    border-top: .5px solid gray;
     align-content: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 
 }
 
-nav li:active{
-    color: #428d6a;
+navul li:hover{
+    background-color: rgb(94, 62, 62);
 }
-
+ 
 li img{
     width: 20%;
     margin: 5px 0px;
@@ -333,5 +335,14 @@ hr{
 .contact-card p{
     align-self: center;
     color: gray;
+}
+
+#credits{
+    margin-left: 11%;
+    margin-right: 2%;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 1.5em;
 }
 
